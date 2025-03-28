@@ -41,4 +41,12 @@
         tools:layout_editor_absoluteY="415dp"
         tools:srcCompat="@tools:sample/avatars" />
 
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        tools:layout_editor_absoluteX="96dp"
+        tools:layout_editor_absoluteY="219dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
