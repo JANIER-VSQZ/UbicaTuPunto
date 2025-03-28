@@ -25,4 +25,12 @@
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="279dp" />
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="252dp"
+        android:layout_height="121dp"
+        app:srcCompat="@mipmap/logo"
+        tools:layout_editor_absoluteX="79dp"
+        tools:layout_editor_absoluteY="65dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
