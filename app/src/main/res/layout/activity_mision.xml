@@ -85,7 +85,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.972"
-        app:srcCompat="@mipmap/Book" />
+        app:srcCompat="@mipmap/book" />
 
     <ImageButton
         android:id="@+id/imageButton2"
@@ -100,7 +100,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.969"
-        app:srcCompat="@mipmap/Home" />
+        app:srcCompat="@mipmap/home" />
 
     <ImageButton
         android:id="@+id/imageButton3"
@@ -115,6 +115,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.969"
-        app:srcCompat="@mipmap/User" />
+        app:srcCompat="@mipmap/user" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
