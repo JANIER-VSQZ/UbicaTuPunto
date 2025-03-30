@@ -40,6 +40,9 @@
             android:name=".CreateUser"
             android:exported="false" />
         <activity
+            android:name=".RecuperarContrasena"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true" >
             <intent-filter>
