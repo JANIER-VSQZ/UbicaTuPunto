@@ -5,6 +5,281 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#34AB6F"
     tools:context=".Selection">
+
+    <View
+        android:id="@+id/view8"
+        android:layout_width="403dp"
+        android:layout_height="46dp"
+        android:background="#D2E2DA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <View
+        android:id="@+id/view7"
+        android:layout_width="350dp"
+        android:layout_height="55dp"
+        android:background="@drawable/rounded_corners_exp_bar"
+        android:outlineProvider="background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976" />
+
+    <ImageButton
+        android:id="@+id/imageButton7"
+        android:layout_width="59dp"
+        android:layout_height="43dp"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.894"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.969"
+        app:srcCompat="@mipmap/user" />
+
+    <ImageButton
+        android:id="@+id/imageButton8"
+        android:layout_width="51dp"
+        android:layout_height="44dp"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.969"
+        app:srcCompat="@mipmap/home" />
+
+    <ImageButton
+        android:id="@+id/imageButton9"
+        android:layout_width="67dp"
+        android:layout_height="49dp"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.097"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.972"
+        app:srcCompat="@mipmap/book" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="378dp"
+        android:layout_height="111dp"
+        android:background="#3B3B3B"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.124">
+
+        <ImageButton
+            android:id="@+id/btnTaxi"
+            android:layout_width="160dp"
+            android:layout_height="98dp"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.075"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@mipmap/taxi" />
+
+        <ImageButton
+            android:id="@+id/btnBus"
+            android:layout_width="168dp"
+            android:layout_height="96dp"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btnTaxi"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@mipmap/bus" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Spinner
+        android:id="@+id/cbCiudad"
+        android:layout_width="227dp"
+        android:layout_height="50dp"
+        android:background="#F3F3F3"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.168"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.592" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="345dp"
+        android:layout_height="428dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+        app:layout_constraintVertical_bias="0.244">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#D4E4DC"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="327dp"
+                android:layout_height="201dp"
+                android:layout_margin="10dp"
+                android:background="#A1A5A3"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.515"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.158">
+
+
+                <TextView
+                    android:id="@+id/txtNombreRuta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ruta de transpote A"
+                    android:textColor="#FBFBFB"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.135"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.095" />
+
+                <TextView
+                    android:id="@+id/txtDestinoRuta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rutas: \n Hacia lugar 1\n Hacia lugar 2\n Hacia lugar 3"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.114"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtNombreRuta"
+                    app:layout_constraintVertical_bias="0.246" />
+
+                <Button
+                    android:id="@+id/btnDetalles"
+                    android:layout_width="130dp"
+                    android:layout_height="50dp"
+                    android:backgroundTint="#34AB6F"
+                    android:text="Ver Detalles"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.857"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtDestinoRuta"
+                    app:layout_constraintVertical_bias="0.272" />
+
+                <Button
+                    android:id="@+id/btnImagen"
+                    android:layout_width="130dp"
+                    android:layout_height="50dp"
+                    android:backgroundTint="#34AB6F"
+                    android:text="Ver Imagen"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/btnDetalles"
+                    app:layout_constraintHorizontal_bias="0.41"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtDestinoRuta"
+                    app:layout_constraintVertical_bias="0.272" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="331dp"
+                android:layout_height="177dp"
+                android:layout_margin="10dp"
+                android:background="#A1A5A3"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.515"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.158">
+
+
+                <TextView
+                    android:id="@+id/txtNombreRuta2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ruta de transpote B"
+                    android:textColor="#FBFBFB"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.135"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.095" />
+
+                <TextView
+                    android:id="@+id/txtDestinoRuta2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rutas: \n Hacia lugar 1\n Hacia lugar 2\n Hacia lugar 3"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.114"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtNombreRuta2"
+                    app:layout_constraintVertical_bias="0.246" />
+
+                <Button
+                    android:id="@+id/btnDetalles2"
+                    android:layout_width="130dp"
+                    android:layout_height="50dp"
+                    android:backgroundTint="#34AB6F"
+                    android:text="Ver Detalles"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.855"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtDestinoRuta2"
+                    app:layout_constraintVertical_bias="1.0" />
+
+                <Button
+                    android:id="@+id/btnImagen2"
+                    android:layout_width="130dp"
+                    android:layout_height="50dp"
+                    android:backgroundTint="#34AB6F"
+                    android:text="Ver Imagen"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/btnDetalles2"
+                    app:layout_constraintHorizontal_bias="0.41"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtDestinoRuta2"
+                    app:layout_constraintVertical_bias="1.0" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

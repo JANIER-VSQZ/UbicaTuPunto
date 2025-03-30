@@ -88,7 +88,7 @@
         app:srcCompat="@mipmap/book" />
 
     <ImageButton
-        android:id="@+id/imageButton2"
+        android:id="@+id/btnTaxi"
         android:layout_width="51dp"
         android:layout_height="44dp"
         android:adjustViewBounds="true"
@@ -103,7 +103,7 @@
         app:srcCompat="@mipmap/home" />
 
     <ImageButton
-        android:id="@+id/imageButton3"
+        android:id="@+id/btnBus"
         android:layout_width="59dp"
         android:layout_height="43dp"
         android:adjustViewBounds="true"
