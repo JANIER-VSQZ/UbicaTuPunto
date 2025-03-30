@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
+    xmlns:tools="http://schemas.android.com/tools" >
 
     <application
         android:allowBackup="true"
@@ -11,10 +11,40 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppUbicatupunto"
-        tools:targetApi="31">
+        tools:targetApi="31" >
+        <activity
+            android:name=".MapViewBus"
+            android:exported="false" />
+        <activity
+            android:name=".Mision"
+            android:exported="false" />
+        <activity
+            android:name=".MapViewTaxis"
+            android:exported="false" />
+        <activity
+            android:name=".GaleryViewBus"
+            android:exported="false" />
+        <activity
+            android:name=".GaleryViewTaxis"
+            android:exported="false" />
+        <activity
+            android:name=".ChangePassword"
+            android:exported="false" />
+        <activity
+            android:name=".Profile"
+            android:exported="false" />
+        <activity
+            android:name=".Selection"
+            android:exported="false" />
+        <activity
+            android:name=".CreateUser"
+            android:exported="false" />
+        <activity
+            android:name=".RecuperarContrasena"
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
