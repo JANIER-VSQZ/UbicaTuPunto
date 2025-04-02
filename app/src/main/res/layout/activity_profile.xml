@@ -8,18 +8,6 @@
     android:background="#F0ECEC"
     tools:context=".Profile">
 
-    <View
-        android:id="@+id/view6"
-        android:layout_width="350dp"
-        android:layout_height="55dp"
-        android:background="@drawable/rounded_corners_exp_bar"
-        android:outlineProvider="background"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.976" />
-
     <ImageButton
         android:id="@+id/imageButton4"
         android:layout_width="67dp"
@@ -36,21 +24,6 @@
         app:srcCompat="@mipmap/book" />
 
     <ImageButton
-        android:id="@+id/imageButton5"
-        android:layout_width="59dp"
-        android:layout_height="43dp"
-        android:adjustViewBounds="true"
-        android:background="@android:color/transparent"
-        android:scaleType="fitCenter"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.894"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.969"
-        app:srcCompat="@mipmap/user" />
-
-    <ImageButton
         android:id="@+id/imageButton6"
         android:layout_width="51dp"
         android:layout_height="44dp"
@@ -64,6 +37,33 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.969"
         app:srcCompat="@mipmap/home" />
+
+    <View
+        android:id="@+id/view6"
+        android:layout_width="350dp"
+        android:layout_height="55dp"
+        android:background="@drawable/rounded_corners_exp_bar"
+        android:outlineProvider="background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976" />
+
+    <ImageButton
+        android:id="@+id/imageButton5"
+        android:layout_width="59dp"
+        android:layout_height="43dp"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.894"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.969"
+        app:srcCompat="@mipmap/user" />
 
     <Button
         android:id="@+id/btnCambiarContraX"
