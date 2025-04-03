@@ -89,8 +89,8 @@
 
     <ImageButton
         android:id="@+id/imageButton1"
-        android:layout_width="51dp"
-        android:layout_height="44dp"
+        android:layout_width="45dp"
+        android:layout_height="37dp"
         android:adjustViewBounds="true"
         android:background="@android:color/transparent"
         android:scaleType="fitCenter"
