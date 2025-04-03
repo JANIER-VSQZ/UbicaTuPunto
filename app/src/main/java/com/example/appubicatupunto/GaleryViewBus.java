@@ -1,6 +1,8 @@
 package com.example.appubicatupunto;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -21,4 +23,22 @@ public class GaleryViewBus extends AppCompatActivity {
             return insets;
         });
     }
+
+    //botones de barra de navegacion
+    public void Menu(View view){
+        Intent menu = new Intent(this,Selection.class);
+        startActivity(menu);
+    }
+
+    public void Mision(View view) {
+        Intent mision = new Intent(this, Mision.class);
+        startActivity(mision);
+    }
+
+    public void Perfil(View view) {
+        Intent perfil = new Intent(this, Profile.class);
+        startActivity(perfil);
+    }
+
+
 }
