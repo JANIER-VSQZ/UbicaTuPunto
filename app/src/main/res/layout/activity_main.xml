@@ -8,10 +8,11 @@
     android:background="#F0ECEC"
     tools:context=".MainActivity">
 
+
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="154dp"
-        android:layout_height="207dp"
+        android:layout_width="237dp"
+        android:layout_height="279dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -23,15 +24,16 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="sans-serif-condensed-medium"
+        android:fontFamily="sans-serif-black"
         android:text="INICIAR SESION"
         android:textColor="#1976D2"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.409" />
+        app:layout_constraintVertical_bias="0.47" />
 
     <View
         android:id="@+id/view"
@@ -49,67 +51,46 @@
         android:id="@+id/view2"
         android:layout_width="331dp"
         android:layout_height="337dp"
-        android:layout_marginEnd="40dp"
-        android:background="#F6F6F6"
+        android:background="@android:drawable/editbox_background"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.898" />
 
-    <View
-        android:id="@+id/view4"
-        android:layout_width="235dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="88dp"
-        android:background="#F0ECEC"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.573" />
-
-    <View
-        android:id="@+id/view5"
-        android:layout_width="235dp"
-        android:layout_height="60dp"
-        android:background="#F0ECEC"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.728" />
-
     <EditText
         android:id="@+id/editTextTextEmailAddress"
-        android:layout_width="230dp"
-        android:layout_height="50dp"
+        android:layout_width="243dp"
+        android:layout_height="56dp"
+        android:background="@android:drawable/editbox_background"
         android:backgroundTint="#F0ECEC"
         android:ems="10"
-        android:hint="Email"
+        android:hint="  Email"
         android:inputType="textEmailAddress"
         android:textColorHighlight="#FFFFFF"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.581" />
+        app:layout_constraintVertical_bias="0.625" />
 
     <EditText
         android:id="@+id/txtRecuperarContra2"
-        android:layout_width="230dp"
-        android:layout_height="50dp"
-        android:background="#F0ECEC"
+        android:layout_width="243dp"
+        android:layout_height="51dp"
+        android:background="@android:drawable/editbox_background"
+        android:backgroundTint="#F0ECEC"
         android:ems="10"
-        android:hint="Contraseña"
+        android:hint=" Contraseña"
         android:inputType="numberPassword"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.532"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.72" />
+        app:layout_constraintVertical_bias="0.75" />
 
     <Button
         android:id="@+id/button"
@@ -131,10 +112,10 @@
         android:text="¿No tienes una cuenta?"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.33"
+        app:layout_constraintHorizontal_bias="0.315"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.787" />
+        app:layout_constraintVertical_bias="0.80" />
 
     <TextView
         android:id="@+id/textView5"
@@ -147,7 +128,7 @@
         app:layout_constraintHorizontal_bias="0.743"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.786" />
+        app:layout_constraintVertical_bias="0.80" />
 
     <TextView
         android:id="@+id/textView6"
@@ -159,6 +140,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.64" />
+        app:layout_constraintVertical_bias="0.68" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
