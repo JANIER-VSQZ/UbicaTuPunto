@@ -39,19 +39,17 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
 
-
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="340dp"
-        android:layout_height="184dp"
+        android:layout_width="384dp"
+        android:layout_height="171dp"
         android:layout_marginTop="66dp"
-        android:scaleType="centerInside"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.563"
+        app:layout_constraintHorizontal_bias="0.592"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.09"
+        app:layout_constraintVertical_bias="0.096"
         app:srcCompat="@mipmap/punto_bus" />
 
     <TextView
@@ -60,8 +58,7 @@
         android:layout_height="121dp"
         android:layout_marginStart="36dp"
         android:layout_marginEnd="36dp"
-        android:background="@drawable/rounded_background"
-        android:backgroundTint="#759585"
+        android:background="#759585"
         android:text="TextView"
         android:textColor="#FFFFFF"
         android:textSize="20sp"
@@ -73,11 +70,11 @@
 
     <TextView
         android:id="@+id/textView12"
-        android:layout_width="353dp"
-        android:layout_height="347dp"
+        android:layout_width="365dp"
+        android:layout_height="357dp"
         android:layout_marginStart="36dp"
         android:layout_marginEnd="36dp"
-        android:background="@drawable/rounded_background"
+        android:background="#F8F6F6"
         android:textColor="#FFFFFF"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -134,63 +131,59 @@
         app:layout_constraintVertical_bias="0.969"
         app:srcCompat="@mipmap/user" />
 
-
     <ImageView
         android:id="@+id/imageView6"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:adjustViewBounds="true"
-        android:scaleType="fitCenter"
+        android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.172"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.674"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7"
+        app:layout_constraintVertical_bias="0.065"
         app:srcCompat="@mipmap/bus_carrizal" />
 
     <ImageView
         android:id="@+id/imageView7"
         android:layout_width="150dp"
         android:layout_height="150dp"
+        android:scaleType="centerCrop"
         android:layout_margin="0dp"
-        android:adjustViewBounds="true"
         android:padding="0dp"
-        android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.172"
+        app:layout_constraintEnd_toStartOf="@+id/imageView8"
+        app:layout_constraintHorizontal_bias="0.629"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.456"
+        app:layout_constraintVertical_bias="0.462"
         app:srcCompat="@mipmap/bus_anillo" />
 
     <ImageView
         android:id="@+id/imageView8"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:adjustViewBounds="true"
-        android:scaleType="fitCenter"
+        android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="@+id/textView12"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.816"
+        app:layout_constraintHorizontal_bias="0.846"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.656"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:layout_constraintVertical_bias="0.217"
         app:srcCompat="@mipmap/bus_rio_grande" />
 
     <ImageView
         android:id="@+id/imageView9"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:adjustViewBounds="true"
-        android:scaleType="fitCenter"
+        android:layout_marginBottom="232dp"
+        android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.816"
+        app:layout_constraintHorizontal_bias="0.846"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.674"
+        app:layout_constraintTop_toBottomOf="@+id/imageView8"
+        app:layout_constraintVertical_bias="0.684"
         app:srcCompat="@mipmap/bus_unah" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
