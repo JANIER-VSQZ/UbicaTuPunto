@@ -1,6 +1,8 @@
 package com.example.appubicatupunto;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -21,4 +23,24 @@ public class Profile extends AppCompatActivity {
             return insets;
         });
     }
+
+    //METODO DEL BOTON MENU
+    public void Menu(View view){
+        Intent menu = new Intent(this,Selection.class);
+        startActivity(menu);
+    } //FIN METODO DEL BOTON MENU
+
+
+    //METODO DEL BOTON MISION
+    public void Mision(View view){
+        Intent mision = new Intent(this,Mision.class);
+        startActivity(mision);
+    } //FIN METODO DEL BOTON MENU
+
+
+    //METODO DEL BOTON CAMBIAR CONTRASEÑA
+    public void Contra(View view){
+        Intent contra = new Intent(this,ChangePassword.class);
+        startActivity(contra);
+    } //FIN METODO DEL BOTON CAMBIAR CONTRASEÑA
 }
