@@ -1,6 +1,9 @@
 package com.example.appubicatupunto;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
@@ -78,4 +81,24 @@ public class MapViewBus extends AppCompatActivity implements OnMapReadyCallback 
         float zoomLevel = 16.0f;  // Aumenta el valor para más zoom (máximo 21.0f)
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(sydney, zoomLevel));
     }
+    //METODOS BOTONES DE NAVEGACION
+    //METODO DEL BOTON MENU
+    public void Menu(View view){
+        Intent menu = new Intent(this,Selection.class);
+        startActivity(menu);
+    } //FIN METODO DEL BOTON MENU
+
+
+    //METODO DEL BOTON MISION
+    public void Mision(View view){
+        Intent mision = new Intent(this,Mision.class);
+        startActivity(mision);
+    } //FIN METODO DEL BOTON MENU
+
+    //METODO DEL BOTON PERFIL
+    public void perfil(View view){
+        Intent perfil = new Intent(this,Profile.class);
+        startActivity(perfil);
+    } //FIN METODO DEL PERFIL
+
 }

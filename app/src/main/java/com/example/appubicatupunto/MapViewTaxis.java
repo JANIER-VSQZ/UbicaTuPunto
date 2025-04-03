@@ -95,11 +95,11 @@ public class MapViewTaxis extends AppCompatActivity implements OnMapReadyCallbac
         startActivity(mision);
     } //FIN METODO DEL BOTON MENU
 
+    //METODO DEL BOTON PERFIL
+    public void perfil(View view){
+        Intent perfil = new Intent(this,Profile.class);
+        startActivity(perfil);
+    } //FIN METODO DEL PERFIL
 
-    //METODO DEL BOTON CAMBIAR CONTRASEÑA
-    public void Contra(View view){
-        Intent contra = new Intent(this,ChangePassword.class);
-        startActivity(contra);
-    } //FIN METODO DEL BOTON CAMBIAR CONTRASEÑA
 
 }

@@ -49,10 +49,12 @@
         app:layout_constraintVertical_bias="0.068" />
 
     <View
-        android:id="@+id/view13"
+        android:id="@+id/view25"
         android:layout_width="350dp"
         android:layout_height="55dp"
         android:background="@drawable/rounded_corners_exp_bar"
+        android:backgroundTint="#58545C"
+        android:backgroundTintMode="src_over"
         android:outlineProvider="background"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -61,34 +63,35 @@
         app:layout_constraintVertical_bias="0.976" />
 
     <ImageButton
-        android:id="@+id/imageButton15"
-        android:layout_width="67dp"
-        android:layout_height="49dp"
+        android:id="@+id/imageButton17"
+        android:layout_width="59dp"
+        android:layout_height="43dp"
         android:adjustViewBounds="true"
         android:background="@android:color/transparent"
-        android:onClick="Mision"
+        android:onClick="perfil"
         android:scaleType="fitCenter"
         android:scaleX="0.80"
         android:scaleY="0.80"
+        android:tint="#F6F3F3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.097"
+        app:layout_constraintHorizontal_bias="0.87"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.972"
-        app:srcCompat="@android:drawable/ic_dialog_info" />
+        app:layout_constraintVertical_bias="0.968"
+        app:srcCompat="@mipmap/user" />
 
     <ImageButton
-        android:id="@+id/imageButton16"
+        android:id="@+id/imageButton18"
         android:layout_width="51dp"
         android:layout_height="44dp"
         android:adjustViewBounds="true"
-        android:background="@android:color/transparent"
+        android:background="#00FFFFFF"
         android:onClick="Menu"
         android:scaleType="fitCenter"
-        android:scaleX="0.95"
-        android:scaleY="0.95"
-        android:tint="#F6F3F3"
+        android:scaleX="0.80"
+        android:scaleY="0.80"
+        android:tint="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -98,22 +101,47 @@
         app:srcCompat="@mipmap/home" />
 
     <ImageButton
-        android:id="@+id/imageButton17"
-        android:layout_width="59dp"
-        android:layout_height="43dp"
+        android:id="@+id/imageButton20"
+        android:layout_width="67dp"
+        android:layout_height="49dp"
         android:adjustViewBounds="true"
         android:background="@android:color/transparent"
-        android:onClick="Contra"
+        android:onClick="Mision"
         android:scaleType="fitCenter"
-        android:scaleX="0.95"
-        android:scaleY="0.95"
-        android:tint="#F6F1F1"
+        android:scaleX="0.70"
+        android:scaleY="0.70"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.894"
+        app:layout_constraintHorizontal_bias="0.12"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.969"
-        app:srcCompat="@mipmap/user" />
+        app:layout_constraintVertical_bias="0.972"
+        app:srcCompat="@android:drawable/ic_dialog_info" />
+
+    <View
+        android:id="@+id/view26"
+        android:layout_width="12dp"
+        android:layout_height="41dp"
+        android:background="@android:drawable/btn_default_small"
+        android:scaleX="0.3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.325"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.969" />
+
+    <View
+        android:id="@+id/view27"
+        android:layout_width="12dp"
+        android:layout_height="41dp"
+        android:background="@android:drawable/btn_default_small"
+        android:scaleX="0.3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.674"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.969" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

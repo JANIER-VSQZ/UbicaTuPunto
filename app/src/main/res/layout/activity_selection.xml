@@ -5,25 +5,16 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#34AB6F"
+    android:background="#34AC70"
     tools:context=".Selection">
-
-    <View
-        android:id="@+id/view8"
-        android:layout_width="403dp"
-        android:layout_height="46dp"
-        android:background="#D2E2DA"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/scrollView2"
-        app:layout_constraintVertical_bias="1.0" />
 
     <View
         android:id="@+id/view7"
         android:layout_width="350dp"
         android:layout_height="55dp"
         android:background="@drawable/rounded_corners_exp_bar"
+        android:backgroundTint="#58545C"
+        android:backgroundTintMode="src_over"
         android:outlineProvider="background"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -37,13 +28,17 @@
         android:layout_height="43dp"
         android:adjustViewBounds="true"
         android:background="@android:color/transparent"
+        android:onClick="perfil"
         android:scaleType="fitCenter"
+        android:scaleX="0.80"
+        android:scaleY="0.80"
+        android:tint="#F6F3F3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.894"
+        app:layout_constraintHorizontal_bias="0.87"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.969"
+        app:layout_constraintVertical_bias="0.968"
         app:srcCompat="@mipmap/user" />
 
     <ImageButton
@@ -51,8 +46,11 @@
         android:layout_width="51dp"
         android:layout_height="44dp"
         android:adjustViewBounds="true"
-        android:background="@android:color/transparent"
+        android:background="@android:drawable/editbox_background_normal"
         android:scaleType="fitCenter"
+        android:scaleX="1.1"
+        android:scaleY="1.1"
+        android:tint="#4C5C8C"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -67,20 +65,25 @@
         android:layout_height="49dp"
         android:adjustViewBounds="true"
         android:background="@android:color/transparent"
+        android:onClick="info"
         android:scaleType="fitCenter"
+        android:scaleX="0.70"
+        android:scaleY="0.70"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.097"
+        app:layout_constraintHorizontal_bias="0.12"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.972"
-        app:srcCompat="@mipmap/book" />
+        app:srcCompat="@android:drawable/ic_dialog_info" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"
         android:layout_width="378dp"
         android:layout_height="111dp"
-        android:background="#3B3B3B"
+        android:background="@drawable/rounded_corners_exp_bar"
+        android:backgroundTint="#3B3B3B"
+        android:backgroundTintMode="src_over"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.515"
@@ -92,6 +95,7 @@
             android:id="@+id/btnTaxi"
             android:layout_width="160dp"
             android:layout_height="98dp"
+            android:backgroundTint="#4C5C8C"
             android:scaleType="fitCenter"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -104,6 +108,7 @@
             android:id="@+id/btnBus"
             android:layout_width="168dp"
             android:layout_height="96dp"
+            android:backgroundTint="#4C5C8C"
             android:scaleType="fitCenter"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -137,14 +142,14 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#D4E4DC"
+            android:background="@drawable/rounded_background"
             android:orientation="vertical">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="327dp"
                 android:layout_height="201dp"
                 android:layout_margin="10dp"
-                android:background="#A1A5A3"
+                android:background="@drawable/rounded_corners_exp_bar"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.515"
@@ -212,7 +217,7 @@
                 android:layout_width="331dp"
                 android:layout_height="177dp"
                 android:layout_margin="10dp"
-                android:background="#A1A5A3"
+                android:background="@drawable/rounded_corners_exp_bar"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.515"
@@ -280,6 +285,32 @@
 
 
     </ScrollView>
+
+    <View
+        android:id="@+id/view8"
+        android:layout_width="12dp"
+        android:layout_height="41dp"
+        android:background="@android:drawable/btn_default_small"
+        android:scaleX="0.3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.325"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.969" />
+
+    <View
+        android:id="@+id/view10"
+        android:layout_width="12dp"
+        android:layout_height="41dp"
+        android:background="@android:drawable/btn_default_small"
+        android:scaleX="0.3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.674"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.969" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

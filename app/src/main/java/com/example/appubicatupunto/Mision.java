@@ -1,6 +1,8 @@
 package com.example.appubicatupunto;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -21,4 +23,16 @@ public class Mision extends AppCompatActivity {
             return insets;
         });
     }
+    //METODO DEL BOTON PERFIL
+    public void perfil(View view){
+        Intent perfil = new Intent(this,Profile.class);
+        startActivity(perfil);
+    } //FIN METODO DEL PERFIL
+
+    //METODO DEL BOTON SELECCION
+    public void seleccion(View view){
+        Intent seleccion = new Intent(this,Selection.class);
+        startActivity(seleccion);
+    } //FIN METODO DEL SELECCION
+
 }
