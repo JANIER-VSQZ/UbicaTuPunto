@@ -7,6 +7,42 @@
     android:layout_height="match_parent"
     tools:context=".CreateUser">
 
+    <EditText
+        android:id="@+id/txtCreateUserEmail"
+        android:layout_width="256dp"
+        android:layout_height="51dp"
+        android:background="@android:drawable/editbox_background"
+        android:backgroundTint="#F0ECEC"
+        android:ems="10"
+        android:hint="  Email"
+        android:inputType="textEmailAddress"
+        android:textColorHighlight="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.445"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3" />
+
+    <EditText
+        android:id="@+id/txtCreateUserNombre"
+        android:layout_width="256dp"
+        android:layout_height="51dp"
+        android:background="@android:drawable/editbox_background"
+        android:backgroundTint="#F0ECEC"
+        android:ems="10"
+        android:hint="Nombre completo"
+        android:inputType="textEmailAddress"
+        android:textColorHighlight="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.445"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.438" />
+
     <View
         android:id="@+id/view13"
         android:layout_width="12dp"
@@ -133,42 +169,11 @@
         app:layout_constraintVertical_bias="0.06" />
 
     <EditText
-        android:id="@+id/txtCreateUserEmail"
-        android:layout_width="253dp"
-        android:layout_height="51dp"
-        android:background="#FFFCFC"
-        android:ems="10"
-        android:hint="Email"
-        android:inputType="numberPassword"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.455"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.327" />
-
-    <EditText
-        android:id="@+id/txtCreateUserNombre"
-        android:layout_width="253dp"
-        android:layout_height="51dp"
-        android:background="#FFFCFC"
-        android:ems="10"
-        android:hint="Nombre completo"
-        android:inputType="numberPassword"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.455"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.444" />
-
-    <EditText
         android:id="@+id/txtCreateUserPassword"
         android:layout_width="253dp"
         android:layout_height="51dp"
-        android:background="#FFFCFC"
+        android:background="@android:drawable/editbox_background"
+        android:backgroundTint="#F0ECEC"
         android:ems="10"
         android:hint="Contraseña"
         android:inputType="numberPassword"
