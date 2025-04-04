@@ -43,8 +43,6 @@
         <activity
             android:name=".GaleryViewTaxis"
             android:exported="false"/>
-
-
         <activity
             android:name=".ChangePassword"
             android:exported="false" />
@@ -55,7 +53,9 @@
 
         <activity
             android:name=".Selection"
-            android:exported="true" />
+            android:exported="false">
+
+        </activity>>
 
         <activity
             android:name=".CreateUser"
