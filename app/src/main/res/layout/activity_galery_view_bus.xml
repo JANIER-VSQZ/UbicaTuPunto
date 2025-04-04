@@ -9,11 +9,45 @@
     android:padding="0dp"
     tools:context=".GaleryViewBus">
 
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="345dp"
+        android:layout_height="97dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginEnd="36dp"
+        android:background="@drawable/rounded_background"
+        android:backgroundTint="#759585"
+        android:text="Horarios de circulación"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.851" />
+
+    <View
+        android:id="@+id/view28"
+        android:layout_width="350dp"
+        android:layout_height="55dp"
+        android:background="@drawable/rounded_corners_exp_bar"
+        android:backgroundTint="#58545C"
+        android:backgroundTintMode="src_over"
+        android:outlineProvider="background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976" />
+
     <View
         android:id="@+id/view11"
         android:layout_width="350dp"
         android:layout_height="55dp"
         android:background="@drawable/rounded_corners_exp_bar"
+        android:backgroundTint="#58545C"
+        android:backgroundTintMode="src_over"
         android:outlineProvider="background"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -29,6 +63,7 @@
         android:layout_marginTop="49dp"
         android:layout_marginEnd="170dp"
         android:layout_marginBottom="663dp"
+        android:fontFamily="sans-serif-black"
         android:text="IMÁGENES"
         android:textColor="#FFFFFF"
         android:textSize="44sp"
@@ -39,74 +74,176 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
 
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="384dp"
-        android:layout_height="171dp"
-        android:layout_marginTop="66dp"
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="219dp"
+        android:layout_height="131dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginEnd="36dp"
+        android:background="@drawable/rounded_background"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.592"
+        app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.096"
+        app:layout_constraintVertical_bias="0.193" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="266dp"
+        android:layout_height="116dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="66dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.111"
         app:srcCompat="@mipmap/punto_bus" />
 
     <TextView
-        android:id="@+id/textView11"
-        android:layout_width="348dp"
-        android:layout_height="121dp"
+        android:id="@+id/textView12"
+        android:layout_width="280dp"
+        android:layout_height="255dp"
         android:layout_marginStart="36dp"
         android:layout_marginEnd="36dp"
-        android:background="#759585"
-        android:text="TextView"
+        android:background="@drawable/rounded_background"
         android:textColor="#FFFFFF"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.877" />
+        app:layout_constraintVertical_bias="0.557" />
 
     <TextView
-        android:id="@+id/textView12"
-        android:layout_width="365dp"
-        android:layout_height="357dp"
-        android:layout_marginStart="36dp"
-        android:layout_marginEnd="36dp"
-        android:background="#F8F6F6"
-        android:textColor="#FFFFFF"
-        android:textSize="20sp"
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Buses Carrizal"
+        android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.258"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.59" />
+        app:layout_constraintVertical_bias="0.693" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Buses Río Grande"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.753"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.692" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.715"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.627"
+        app:srcCompat="@mipmap/bus_rio_grande" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.265"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.627"
+        app:srcCompat="@mipmap/bus_carrizal" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:layout_margin="0dp"
+        android:padding="0dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.265"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.435"
+        app:srcCompat="@mipmap/bus_anillo" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.718"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.435"
+        app:srcCompat="@mipmap/bus_unah" />
 
     <ImageButton
-        android:id="@+id/imageButton2"
-        android:layout_width="67dp"
-        android:layout_height="49dp"
+        android:id="@+id/imageButton21"
+        android:layout_width="59dp"
+        android:layout_height="43dp"
         android:adjustViewBounds="true"
         android:background="@android:color/transparent"
-        android:onClick="Mision"
+        android:onClick="Perfil"
         android:scaleType="fitCenter"
+        android:scaleX="0.80"
+        android:scaleY="0.80"
+        android:tint="#F6F3F3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.097"
+        app:layout_constraintHorizontal_bias="0.87"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.972"
-        app:srcCompat="@mipmap/book" />
+        app:layout_constraintVertical_bias="0.968"
+        app:srcCompat="@mipmap/user" />
+
+    <View
+        android:id="@+id/view29"
+        android:layout_width="12dp"
+        android:layout_height="41dp"
+        android:background="@android:drawable/btn_default_small"
+        android:scaleX="0.3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.674"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.969" />
 
     <ImageButton
-        android:id="@+id/btnTaxi2"
+        android:id="@+id/imageButton16"
         android:layout_width="51dp"
         android:layout_height="44dp"
         android:adjustViewBounds="true"
-        android:background="@android:color/transparent"
+        android:background="#00FFFFFF"
         android:onClick="Menu"
         android:scaleType="fitCenter"
+        android:scaleX="0.80"
+        android:scaleY="0.80"
+        android:tint="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -116,74 +253,88 @@
         app:srcCompat="@mipmap/home" />
 
     <ImageButton
-        android:id="@+id/btnBus2"
-        android:layout_width="59dp"
-        android:layout_height="43dp"
+        android:id="@+id/imageButton2"
+        android:layout_width="67dp"
+        android:layout_height="49dp"
         android:adjustViewBounds="true"
         android:background="@android:color/transparent"
-        android:onClick="Perfil"
+        android:onClick="Mision"
         android:scaleType="fitCenter"
+        android:scaleX="0.70"
+        android:scaleY="0.70"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.894"
+        app:layout_constraintHorizontal_bias="0.12"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.969"
-        app:srcCompat="@mipmap/user" />
+        app:layout_constraintVertical_bias="0.972"
+        app:srcCompat="@android:drawable/ic_dialog_info" />
 
-    <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:scaleType="centerCrop"
+    <View
+        android:id="@+id/view24"
+        android:layout_width="12dp"
+        android:layout_height="41dp"
+        android:background="@android:drawable/btn_default_small"
+        android:scaleX="0.3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.172"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView7"
-        app:layout_constraintVertical_bias="0.065"
-        app:srcCompat="@mipmap/bus_carrizal" />
-
-    <ImageView
-        android:id="@+id/imageView7"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:scaleType="centerCrop"
-        android:layout_margin="0dp"
-        android:padding="0dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/imageView8"
-        app:layout_constraintHorizontal_bias="0.629"
+        app:layout_constraintHorizontal_bias="0.325"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.462"
-        app:srcCompat="@mipmap/bus_anillo" />
+        app:layout_constraintVertical_bias="0.969" />
 
-    <ImageView
-        android:id="@+id/imageView8"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:scaleType="centerCrop"
-        app:layout_constraintBottom_toBottomOf="@+id/textView12"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.846"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3"
-        app:layout_constraintVertical_bias="0.217"
-        app:srcCompat="@mipmap/bus_rio_grande" />
-
-    <ImageView
-        android:id="@+id/imageView9"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_marginBottom="232dp"
-        android:scaleType="centerCrop"
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Buses del anillo"
+        android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.846"
+        app:layout_constraintHorizontal_bias="0.268"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView8"
-        app:layout_constraintVertical_bias="0.684"
-        app:srcCompat="@mipmap/bus_unah" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.522" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Buses UNAH"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.698"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.522" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hora Inicio: 5:30 AM"
+        android:textColor="#FFFDFD"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.475"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.811" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hora Final: 7:15 PM"
+        android:textColor="#FFFDFD"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.471"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.849" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

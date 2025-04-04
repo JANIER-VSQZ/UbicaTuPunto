@@ -8,11 +8,76 @@
     android:background="#34AC70"
     tools:context=".GaleryViewTaxis">
 
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="372dp"
+        android:layout_height="99dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/rounded_background"
+        android:backgroundTint="#759585"
+        android:text="Horarios de circulación"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.851" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hora Inicio: 5:00 AM"
+        android:textAlignment="textStart"
+        android:textColor="#FFFDFD"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.116"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.809" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hora Final: 11:00 PM"
+        android:textAlignment="textEnd"
+        android:textColor="#FFFDFD"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.885"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.809" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="288dp"
+        android:layout_height="31dp"
+        android:text="*Algunos conductores podrían operar fuera de este horario.*"
+        android:textAlignment="center"
+        android:textColor="#FFFDFD"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.471"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.851" />
+
     <View
         android:id="@+id/view9"
         android:layout_width="350dp"
         android:layout_height="55dp"
         android:background="@drawable/rounded_corners_exp_bar"
+        android:backgroundTint="#58545C"
+        android:backgroundTintMode="src_over"
         android:outlineProvider="background"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -28,51 +93,48 @@
         android:layout_marginTop="49dp"
         android:layout_marginEnd="170dp"
         android:layout_marginBottom="663dp"
+        android:fontFamily="sans-serif-black"
         android:text="IMÁGENES"
         android:textColor="#FFFFFF"
         android:textSize="44sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.476"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="374dp"
-        android:layout_height="181dp"
-        android:layout_marginTop="66dp"
-        android:scaleType="centerInside"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.592"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.096"
-        app:srcCompat="@mipmap/punto_taxi" />
+        app:layout_constraintVertical_bias="0.2" />
 
     <TextView
-        android:id="@+id/textView13"
-        android:layout_width="348dp"
-        android:layout_height="121dp"
+        android:id="@+id/textView14"
+        android:layout_width="263dp"
+        android:layout_height="151dp"
         android:layout_marginStart="36dp"
         android:layout_marginEnd="36dp"
         android:background="@drawable/rounded_background"
-        android:backgroundTint="#759585"
-        android:text="TextView"
         android:textColor="#FFFFFF"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.877" />
+        app:layout_constraintVertical_bias="0.224" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="321dp"
+        android:layout_height="138dp"
+        android:layout_marginTop="66dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.121"
+        app:srcCompat="@mipmap/punto_taxi" />
 
     <TextView
-        android:id="@+id/textView14"
-        android:layout_width="353dp"
-        android:layout_height="312dp"
+        android:id="@+id/textView17"
+        android:layout_width="280dp"
+        android:layout_height="213dp"
         android:layout_marginStart="36dp"
         android:layout_marginEnd="36dp"
         android:background="@drawable/rounded_background"
@@ -84,6 +146,19 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.59" />
 
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="267dp"
+        android:layout_height="191dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.581"
+        app:srcCompat="@mipmap/taxis" />
+
     <ImageButton
         android:id="@+id/imageButton3"
         android:layout_width="67dp"
@@ -92,22 +167,59 @@
         android:background="@android:color/transparent"
         android:onClick="Mision"
         android:scaleType="fitCenter"
+        android:scaleX="0.70"
+        android:scaleY="0.70"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.097"
+        app:layout_constraintHorizontal_bias="0.12"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.972"
-        app:srcCompat="@mipmap/book" />
+        app:srcCompat="@android:drawable/ic_dialog_info" />
 
     <ImageButton
-        android:id="@+id/btnTaxi3"
+        android:id="@+id/imageButton15"
+        android:layout_width="59dp"
+        android:layout_height="43dp"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:onClick="Perfil"
+        android:scaleType="fitCenter"
+        android:scaleX="0.80"
+        android:scaleY="0.80"
+        android:tint="#F6F3F3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.87"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.968"
+        app:srcCompat="@mipmap/user" />
+
+    <View
+        android:id="@+id/view23"
+        android:layout_width="12dp"
+        android:layout_height="41dp"
+        android:background="@android:drawable/btn_default_small"
+        android:scaleX="0.3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.674"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.969" />
+
+    <ImageButton
+        android:id="@+id/imageButton11"
         android:layout_width="51dp"
         android:layout_height="44dp"
         android:adjustViewBounds="true"
-        android:background="@android:color/transparent"
+        android:background="#00FFFFFF"
         android:onClick="Menu"
         android:scaleType="fitCenter"
+        android:scaleX="0.80"
+        android:scaleY="0.80"
+        android:tint="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -116,31 +228,16 @@
         app:layout_constraintVertical_bias="0.969"
         app:srcCompat="@mipmap/home" />
 
-    <ImageButton
-        android:id="@+id/btnBus3"
-        android:layout_width="59dp"
-        android:layout_height="43dp"
-        android:adjustViewBounds="true"
-        android:background="@android:color/transparent"
-        android:onClick="Perfil"
-        android:scaleType="fitCenter"
+    <View
+        android:id="@+id/view13"
+        android:layout_width="12dp"
+        android:layout_height="41dp"
+        android:background="@android:drawable/btn_default_small"
+        android:scaleX="0.3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.894"
+        app:layout_constraintHorizontal_bias="0.325"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.969"
-        app:srcCompat="@mipmap/user" />
-
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="315dp"
-        android:layout_height="291dp"
-        android:scaleType="fitXY"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.569"
-        app:srcCompat="@mipmap/taxis" />
+        app:layout_constraintVertical_bias="0.969" />
 </androidx.constraintlayout.widget.ConstraintLayout>
