@@ -88,6 +88,7 @@
         android:layout_width="256dp"
         android:layout_height="63dp"
         android:backgroundTint="#34AC70"
+        android:onClick="Iniciar"
         android:text="Crear usuario"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"

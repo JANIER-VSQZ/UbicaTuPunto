@@ -1,6 +1,8 @@
 package com.example.appubicatupunto;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -21,4 +23,11 @@ public class ChangePassword extends AppCompatActivity {
             return insets;
         });
     }
+
+
+    //METODO DEL BOTON INICIAR
+    public void Iniciar(View view){
+        Intent inicio = new Intent(this,MainActivity.class);
+        startActivity(inicio);
+    } //FIN METODO DEL BOTON INICIAR
 }

@@ -25,22 +25,12 @@ public class CreateUser extends AppCompatActivity {
     }
 
     //METODOS BOTONES DE NAVEGACION
-    //METODO DEL BOTON MENU
-    public void Menu(View view){
-        Intent menu = new Intent(this,Selection.class);
-        startActivity(menu);
-    } //FIN METODO DEL BOTON MENU
 
 
-    //METODO DEL BOTON MISION
-    public void Mision(View view){
-        Intent mision = new Intent(this,Mision.class);
-        startActivity(mision);
-    } //FIN METODO DEL BOTON MENU
+    //METODO DEL BOTON INICIAR
+    public void Iniciar(View view){
+        Intent inicio = new Intent(this,MainActivity.class);
+        startActivity(inicio);
+    } //FIN METODO DEL BOTON INICIAR
 
-    //METODO DEL BOTON PERFIL
-    public void perfil(View view){
-        Intent perfil = new Intent(this,Profile.class);
-        startActivity(perfil);
-    } //FIN METODO DEL PERFIL
 }
