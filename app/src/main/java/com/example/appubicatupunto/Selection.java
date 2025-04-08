@@ -23,6 +23,7 @@ import java.util.ArrayList;
 public class Selection extends AppCompatActivity {
 int selectedOption = 0;
 private Spinner cbCiudad;
+    String correoUsuario;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -35,6 +36,7 @@ private Spinner cbCiudad;
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+        correoUsuario = getIntent().getStringExtra("correo_usuario");
 
         ImageView imgTaxi = findViewById(R.id.btnTaxi);
         ImageView imgBus = findViewById(R.id.btnBus);
@@ -123,14 +125,16 @@ private Spinner cbCiudad;
 
     //METODO DEL BOTON PERFIL
     public void perfil(View view){
-        Intent perfil = new Intent(this,Profile.class);
+        Intent perfil = new Intent(this, Profile.class);
+        perfil.putExtra("correo_usuario", correoUsuario); // pasamos el correo
         startActivity(perfil);
     } //FIN METODO DEL PERFIL
 
 
     //METODO DEL BOTON INFORMACION APP
     public void info(View view){
-        Intent info = new Intent(this,Mision.class);
-        startActivity(info);
+        Intent mision = new Intent(this, Mision.class);
+        mision.putExtra("correo_usuario", correoUsuario);
+        startActivity(mision);
     } //FIN METODO DEL BOTON INFORMACION APP
 }

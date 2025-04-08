@@ -22,10 +22,10 @@ public class AdminSQLiteOpen extends SQLiteOpenHelper {
         BaseDeDatos.execSQL(
                 "create table Users" +
                         "(" +
-                        "correo String primary key, " +
+                        "correo TEXT primary key, " +
                         "id_sexo int, " +
-                        "nombre String, " +
-                        "clave String " +
+                        "nombre TEXT, " +
+                        "clave TEXT " +
                         ")");
     }
 
