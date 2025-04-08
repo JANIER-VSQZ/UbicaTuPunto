@@ -8,7 +8,7 @@
     tools:context=".CreateUser">
 
     <EditText
-        android:id="@+id/editTextTextPassword3"
+        android:id="@+id/txtCreateUserClave"
         android:layout_width="256dp"
         android:layout_height="47dp"
         android:background="@android:drawable/editbox_background"
@@ -62,7 +62,7 @@
 
     <View
         android:id="@+id/view6"
-        android:layout_width="414dp"
+        android:layout_width="0dp"
         android:layout_height="154dp"
         android:background="#34AC70"
         android:outlineProvider="background"
@@ -86,14 +86,14 @@
         app:layout_constraintHorizontal_bias="0.092"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.06" />
+        app:layout_constraintVertical_bias="0.05" />
 
     <Button
         android:id="@+id/btnCreateUserLogin"
         android:layout_width="256dp"
         android:layout_height="63dp"
         android:backgroundTint="#34AC70"
-        android:onClick="Iniciar"
+        android:onClick="ingresar"
         android:text="Crear usuario"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -116,28 +116,31 @@
         app:srcCompat="@mipmap/logo2" />
 
     <RadioGroup
-        android:layout_width="317dp"
-        android:layout_height="58dp"
+        android:id="@+id/rgSexo"
+        android:layout_width="252dp"
+        android:layout_height="51dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.472"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.576">
+        app:layout_constraintVertical_bias="0.567">
 
         <RadioButton
-            android:id="@+id/rbCreateUserFemenino"
-            android:layout_width="162dp"
+            android:id="@+id/rbMasculino"
+            android:layout_width="125dp"
             android:layout_height="wrap_content"
-            android:baselineAligned="false"
-            android:text="Femenino" />
+            android:text="Masculino"
+            android:checked="true" />
 
         <RadioButton
-            android:id="@+id/rbCreateUserMasculino"
-            android:layout_width="141dp"
+            android:id="@+id/rbFemenino"
+            android:layout_width="125dp"
             android:layout_height="wrap_content"
-            android:baselineAligned="false"
-            android:text="Masculino" />
+            android:text="Femenino"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
     </RadioGroup>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

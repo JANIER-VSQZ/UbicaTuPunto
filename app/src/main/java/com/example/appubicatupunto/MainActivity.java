@@ -11,6 +11,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -49,11 +52,25 @@ public class MainActivity extends AppCompatActivity {
 
         if (correo.isEmpty() || contrasena.isEmpty()) {
             Toast.makeText(this, "Por favor, ingresa tu correo y contraseña", Toast.LENGTH_SHORT).show();
-        }else {
-            Intent login = new Intent(this,Selection.class);
-            startActivity(login);
+        } else {
+            AdminSQLiteOpen admin = new AdminSQLiteOpen(this, "UbicaTuPunto", null, 1);
+            SQLiteDatabase db = admin.getReadableDatabase();
+
+            Cursor cursor = db.rawQuery("SELECT * FROM Users WHERE correo = ? AND clave = ?", new String[]{correo, contrasena});
+
+            if (cursor.moveToFirst()) {
+                // Usuario autenticado correctamente
+                Toast.makeText(this, "Inicio de sesión exitoso", Toast.LENGTH_SHORT).show();
+                Intent login = new Intent(this, Selection.class);
+                login.putExtra("correo_usuario", correo); // pasar el correo del usuario
+                startActivity(login);
+            } else {
+                // Usuario no encontrado
+                Toast.makeText(this, "Correo o contraseña incorrectos", Toast.LENGTH_SHORT).show();
+            }
+            cursor.close();
+            db.close();
         }
-     //FIN METODO PARA INICIAR SESION
-    }
+    }//FIN DEL METODO PARA INICIAR SESION
 
 }
