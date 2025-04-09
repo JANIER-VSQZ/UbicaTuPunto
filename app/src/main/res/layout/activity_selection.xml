@@ -132,7 +132,7 @@
     <ScrollView
         android:id="@+id/scvContenido"
         android:layout_width="345dp"
-        android:layout_height="428dp"
+        android:layout_height="480dp"
         android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -148,7 +148,7 @@
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="327dp"
-                android:layout_height="201dp"
+                android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:background="@drawable/rounded_corners_exp_bar"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -163,7 +163,7 @@
                     android:id="@+id/txtNombreRuta"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Ruta de transpote A"
+                    android:text="Puntos de taxi:"
                     android:textColor="#FBFBFB"
                     android:textSize="16sp"
                     android:textStyle="bold"
@@ -178,7 +178,7 @@
                     android:id="@+id/txtDestinoRuta"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Rutas: \n Hacia lugar 1\n Hacia lugar 2\n Hacia lugar 3"
+                    android:text=""
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.114"
@@ -216,7 +216,7 @@
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="331dp"
-                android:layout_height="177dp"
+                android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:background="@drawable/rounded_corners_exp_bar"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -231,7 +231,7 @@
                     android:id="@+id/txtNombreRuta2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Ruta de transpote B"
+                    android:text="Puntos de Taxi"
                     android:textColor="#FBFBFB"
                     android:textSize="16sp"
                     android:textStyle="bold"
@@ -246,7 +246,7 @@
                     android:id="@+id/txtDestinoRuta2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Rutas: \n Hacia lugar 1\n Hacia lugar 2\n Hacia lugar 3"
+                    android:text=""
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.114"

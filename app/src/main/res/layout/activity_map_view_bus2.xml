@@ -5,13 +5,12 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
-    tools:context=".MapViewBus" >
+    tools:context=".MapViewBus2">
 
     <com.google.android.gms.maps.MapView
-        android:id="@+id/mapView4"
-        android:layout_width="409dp"
-        android:layout_height="650dp"
+        android:id="@+id/mapView2"
+        android:layout_width="412dp"
+        android:layout_height="726dp"
         android:scaleX="2"
         android:scaleY="2"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -22,7 +21,7 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <View
-        android:id="@+id/view3"
+        android:id="@+id/view30"
         android:layout_width="406dp"
         android:layout_height="68dp"
         android:background="#E634AB6F"
@@ -34,7 +33,7 @@
         app:layout_constraintVertical_bias="0.042" />
 
     <TextView
-        android:id="@+id/txtbuses"
+        android:id="@+id/txtbuses3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-black"

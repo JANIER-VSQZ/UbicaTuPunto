@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" >
+    xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
@@ -15,21 +15,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppUbicatupunto"
-        tools:targetApi="31" >
-
-        <!-- Agregar la API Key de Google Maps -->
+        tools:targetApi="31">
+        <activity
+            android:name=".MapViewTaxi2"
+            android:exported="false" />
+        <activity
+            android:name=".MapViewBus2"
+            android:exported="false" /> <!-- Agregar la API Key de Google Maps -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyCf-XeOuH6vh-qAmVcbgLHjipBYV2f724g" />
-
-        <!-- Modificación aquí para MapViewBus -->
+            android:value="AIzaSyCf-XeOuH6vh-qAmVcbgLHjipBYV2f724g" /> <!-- Modificación aquí para MapViewBus -->
         <activity
             android:name=".MapViewBus"
-            android:exported="false">
-
-        </activity>
-
-        <!-- Otras actividades -->
+            android:exported="false" /> <!-- Otras actividades -->
         <activity
             android:name=".Mision"
             android:exported="false" />
@@ -39,37 +37,30 @@
         <activity
             android:name=".GaleryViewBus"
             android:exported="false" />
-
         <activity
             android:name=".GaleryViewTaxis"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".ChangePassword"
             android:exported="false" />
         <activity
             android:name=".Profile"
-            android:exported="false">
-        </activity>
-
+            android:exported="false" />
         <activity
             android:name=".Selection"
-            android:exported="false">
-
-        </activity>>
-
+            android:exported="false" />
         <activity
             android:name=".CreateUser"
             android:exported="false" />
         <activity
             android:name=".RecuperarContrasena"
-            android:exported="false" />
-
-        <!-- MainActivity modificada -->
+            android:exported="false" /> <!-- MainActivity modificada -->
         <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

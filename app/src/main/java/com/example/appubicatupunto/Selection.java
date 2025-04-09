@@ -24,6 +24,11 @@ public class Selection extends AppCompatActivity {
 int selectedOption = 0;
 private Spinner cbCiudad;
 
+private TextView txtRuta;
+private TextView txtDestino;
+
+private TextView txtRuta2;
+private TextView txtDestino2;
     String correoUsuario;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,6 +53,10 @@ private Spinner cbCiudad;
         cbCiudad = (Spinner) findViewById(R.id.cbCiudad);
         ScrollView scvPrincipal = findViewById(R.id.scvContenido);
         TextView txtAdvertencia = findViewById(R.id.txtAdvertencia);
+        txtRuta = (TextView) findViewById(R.id.txtNombreRuta);
+        txtDestino=(TextView) findViewById(R.id.txtDestinoRuta);
+        txtRuta2 = (TextView) findViewById(R.id.txtNombreRuta2);
+        txtDestino2=(TextView) findViewById(R.id.txtDestinoRuta2);
 
         agregarCB();
 
@@ -57,6 +66,10 @@ private Spinner cbCiudad;
             imgTaxi.setAlpha(0.5f); // Reduce la opacidad del otro
             scvPrincipal.setVisibility(View.VISIBLE);
             txtAdvertencia.setVisibility(View.INVISIBLE);
+            txtRuta.setText("Puntos de Buses:");
+            txtDestino.setText("FID-110\nFID-162\nFID-163\nFID-111\nFID-161\nFID-246\nFID-109\nFID-108\nFID-247\nFID-112");
+            txtRuta2.setText("Puntos de Buses:");
+            txtDestino2.setText("FID-160\nFID-113\nFID-114\nFID-159\nFID-247\nFID-232\nFID-231\nFID-235\nFID-236\nFID-230");
         });
         imgTaxi.setOnClickListener(v -> {
             selectedOption = 2;
@@ -64,6 +77,10 @@ private Spinner cbCiudad;
             imgBus.setAlpha(0.5f); // Reduce la opacidad del otro
             scvPrincipal.setVisibility(View.VISIBLE);
             txtAdvertencia.setVisibility(View.INVISIBLE);
+            txtRuta.setText("Puntos de Taxis:");
+            txtDestino.setText("UNAH\nHato Centro\nPlaza Miraflores\nLlanos-Emisoras\nLas Palmas\nRes Honduras");
+            txtRuta2.setText("Puntos de Taxis:");
+            txtDestino2.setText("Carrizal\nCerro Grande\nLa Granja\nLa San Miguel\nKennedy\nEl Sitio\nla Flor del Campo");
         });
 
         btnImagen.setOnClickListener(v->{
@@ -98,10 +115,10 @@ private Spinner cbCiudad;
 
         btnDetalles2.setOnClickListener(v->{
             if (selectedOption==1){
-                Intent TBus = new Intent(this, MapViewBus.class);
+                Intent TBus = new Intent(this, MapViewBus2.class);
                 startActivity(TBus);
             } else if (selectedOption==2) {
-                Intent Ttaxi = new Intent(this, MapViewTaxis.class);
+                Intent Ttaxi = new Intent(this, MapViewTaxi2.class);
                 startActivity(Ttaxi);
             }
         });
@@ -110,10 +127,10 @@ private Spinner cbCiudad;
 
 
 
+
     public void agregarCB(){
         ArrayList<String> datosCB = new ArrayList<>();
         datosCB.add("Tegucigalpa");
-        datosCB.add("otro");
         ArrayAdapter<String> adaptador = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, datosCB);
         adaptador.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 
@@ -137,10 +154,4 @@ private Spinner cbCiudad;
         mision.putExtra("correo_usuario", correoUsuario);
         startActivity(mision);
     } //FIN METODO DEL BOTON INFORMACION APP
-
-    @Override
-    public void onBackPressed() {
-        // Deshabilita el botón de retroceso
-    }
 }
-
