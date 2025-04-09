@@ -100,8 +100,36 @@ public class Profile extends AppCompatActivity {
     } //FIN METODO DEL BOTON CAMBIAR CONTRASEÑA
 
     //METODO CAMBIAR CUENTA
+
     public void CambiarUsuario(View view){
-        Intent cambiousuario = new Intent(this,MainActivity.class);
-        startActivity(cambiousuario );
-    } //FIN METODO CAMBIAR CUENTA
+        Intent cambiousuario = new Intent(this, MainActivity.class);
+        cambiousuario.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+        startActivity(cambiousuario);
+        finish(); // Opcional, por si acaso quieres cerrar esta activity explícitamente
+    }
+    public void borrarusuario(View view){
+        AdminSQLiteOpen admin = new AdminSQLiteOpen(this, "UbicaTuPunto", null, 1);
+        SQLiteDatabase db = admin.getWritableDatabase();
+
+        // Eliminar el usuario basado en su correo
+        int filasEliminadas = db.delete("Users", "correo = ?", new String[]{correoUsuario});
+
+        if (filasEliminadas > 0) {
+            Toast.makeText(this, "Cuenta eliminada con éxito", Toast.LENGTH_SHORT).show();
+        } else {
+            Toast.makeText(this, "Error al eliminar la cuenta", Toast.LENGTH_SHORT).show();
+        }
+
+        db.close();
+
+        Intent Borrarusuario = new Intent(this, MainActivity.class);
+        Borrarusuario.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+        startActivity(Borrarusuario);
+        finish(); // Opcional, por si acaso quieres cerrar esta activity explícitamente
+    }
+
+    @Override
+    public void onBackPressed() {
+        // Deshabilita el botón de retroceso
+    }
 }
