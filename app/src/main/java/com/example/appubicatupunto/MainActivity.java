@@ -35,8 +35,30 @@ public class MainActivity extends AppCompatActivity {
 
     //METODO DEL BOTON CAMBIAR CONTRASEÑA
     public void Contra(View view){
-        Intent contra = new Intent(this,ChangePassword.class);
-        startActivity(contra);
+        String correo = campocorreo.getText().toString().trim();
+
+        if (correo.isEmpty()) {
+            Toast.makeText(this, "Ingresa tu correo para cambiar la contraseña", Toast.LENGTH_SHORT).show();
+            return;
+        }
+
+        AdminSQLiteOpen admin = new AdminSQLiteOpen(this, "UbicaTuPunto", null, 1);
+        SQLiteDatabase db = admin.getReadableDatabase();
+
+        Cursor cursor = db.rawQuery("SELECT * FROM Users WHERE correo = ?", new String[]{correo});
+
+        if (cursor.moveToFirst()) {
+            // Si El correo existe, abrir la pantalla de cambio de contraseña
+            Intent contra = new Intent(this, ChangePassword.class);
+            contra.putExtra("correo_usuario", correo); // pasar el correo para usarlo en la siguiente actividad si se requiere
+            startActivity(contra);
+        } else {
+            // El correo no existe entonces mostrar un mensaje
+            Toast.makeText(this, "El correo no está registrado", Toast.LENGTH_SHORT).show();
+        }
+
+        cursor.close();
+        db.close();
     } //FIN METODO DEL BOTON CAMBIAR CONTRASEÑA
 
     //METODO DEL ENLACE PARA CREAR USUARIO

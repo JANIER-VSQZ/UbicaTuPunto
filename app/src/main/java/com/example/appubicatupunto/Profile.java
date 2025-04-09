@@ -3,7 +3,7 @@ package com.example.appubicatupunto;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-
+import androidx.appcompat.app.AlertDialog;
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
@@ -108,24 +108,36 @@ public class Profile extends AppCompatActivity {
         finish(); // Opcional, por si acaso quieres cerrar esta activity explícitamente
     }
     public void borrarusuario(View view){
-        AdminSQLiteOpen admin = new AdminSQLiteOpen(this, "UbicaTuPunto", null, 1);
-        SQLiteDatabase db = admin.getWritableDatabase();
+        // Mensajes de confirmación de borrado
+        new AlertDialog.Builder(this)
+                .setTitle("Confirmar eliminación")
+                .setMessage("¿Estás seguro de que deseas eliminar tu cuenta?")
+                .setPositiveButton("Sí, eliminar", (dialog, which) -> {
+                    // Si el usuario confirma, eliminar la cuenta
+                    AdminSQLiteOpen admin = new AdminSQLiteOpen(this, "UbicaTuPunto", null, 1);
+                    SQLiteDatabase db = admin.getWritableDatabase();
 
-        // Eliminar el usuario basado en su correo
-        int filasEliminadas = db.delete("Users", "correo = ?", new String[]{correoUsuario});
+                    int filasEliminadas = db.delete("Users", "correo = ?", new String[]{correoUsuario});
 
-        if (filasEliminadas > 0) {
-            Toast.makeText(this, "Cuenta eliminada con éxito", Toast.LENGTH_SHORT).show();
-        } else {
-            Toast.makeText(this, "Error al eliminar la cuenta", Toast.LENGTH_SHORT).show();
-        }
+                    db.close();
 
-        db.close();
+                    if (filasEliminadas > 0) {
+                        Toast.makeText(this, "Cuenta eliminada con éxito", Toast.LENGTH_SHORT).show();
 
-        Intent Borrarusuario = new Intent(this, MainActivity.class);
-        Borrarusuario.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
-        startActivity(Borrarusuario);
-        finish(); // Opcional, por si acaso quieres cerrar esta activity explícitamente
+                        // Volver al login y limpiar la pila de actividades
+                        Intent Borrarusuario = new Intent(this, MainActivity.class);
+                        Borrarusuario.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                        startActivity(Borrarusuario);
+                        finish();
+                    } else {
+                        Toast.makeText(this, "Error al eliminar la cuenta", Toast.LENGTH_SHORT).show();
+                    }
+                })
+                .setNegativeButton("Cancelar", (dialog, which) -> {
+                    // si cancela solo se cierra
+                    dialog.dismiss();
+                })
+                .show();
     }
 
     @Override
