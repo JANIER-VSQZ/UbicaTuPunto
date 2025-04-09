@@ -45,6 +45,9 @@ public class Mision extends AppCompatActivity {
         startActivity(seleccion);
     } //FIN METODO DEL SELECCION
 
-
+    @Override
+    public void onBackPressed() {
+        // Deshabilita el botón de retroceso
+    }
 
 }

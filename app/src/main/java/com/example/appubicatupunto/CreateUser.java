@@ -111,18 +111,21 @@ public class CreateUser extends AppCompatActivity {
                 txtcorreo.setText("");
                 txtnombre.setText("");
                 txtclave.setText("");
+
+                // Redirigir al usuario a la pantalla de inicio (MainActivity)
+                Intent ingresar = new Intent(this, MainActivity.class);
+                ingresar.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                startActivity(ingresar);
+                finish();
+
             } else {
 
                 Toast.makeText(this, "Todos los campos deben llenarse", Toast.LENGTH_SHORT).show();
 
             }
-        }
-    }
 
-    //METODO DEL BOTON INICIAR
-    public void Iniciar(View view){
-        Intent inicio = new Intent(this,MainActivity.class);
-        startActivity(inicio);
-    } //FIN METODO DEL BOTON INICIAR
+        }
+
+    }
 
 }

@@ -23,6 +23,7 @@ import java.util.ArrayList;
 public class Selection extends AppCompatActivity {
 int selectedOption = 0;
 private Spinner cbCiudad;
+
     String correoUsuario;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -109,7 +110,6 @@ private Spinner cbCiudad;
 
 
 
-
     public void agregarCB(){
         ArrayList<String> datosCB = new ArrayList<>();
         datosCB.add("Tegucigalpa");
@@ -137,4 +137,10 @@ private Spinner cbCiudad;
         mision.putExtra("correo_usuario", correoUsuario);
         startActivity(mision);
     } //FIN METODO DEL BOTON INFORMACION APP
+
+    @Override
+    public void onBackPressed() {
+        // Deshabilita el botón de retroceso
+    }
 }
+
