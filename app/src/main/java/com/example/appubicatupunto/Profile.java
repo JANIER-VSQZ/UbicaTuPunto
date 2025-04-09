@@ -94,7 +94,8 @@ public class Profile extends AppCompatActivity {
 
     //METODO DEL BOTON CAMBIAR CONTRASEÑA
     public void Contra(View view){
-        Intent contra = new Intent(this,ChangePassword.class);
+        Intent contra = new Intent(this, ChangePassword.class);
+        contra.putExtra("correo_usuario", correoUsuario);
         startActivity(contra);
     } //FIN METODO DEL BOTON CAMBIAR CONTRASEÑA
 
