@@ -6,6 +6,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
@@ -27,12 +28,17 @@ public class ChangePassword extends AppCompatActivity {
             return insets;
         });
 
+        TextView textCorreoUsuario = findViewById(R.id.txtCorreo);
+
         correoUsuario = getIntent().getStringExtra("correo_usuario");
 
-        if (correoUsuario == null) {
+        if (correoUsuario != null) {
+            textCorreoUsuario.setText(correoUsuario);
+        } else {
             Toast.makeText(this, "No se recibió el correo del usuario", Toast.LENGTH_SHORT).show();
             finish();
         }
+
     }
 
     //METODO CAMBIAR CONTRASEÑA/LOGIN
