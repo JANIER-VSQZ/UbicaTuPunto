@@ -19,6 +19,9 @@ import androidx.core.view.WindowInsetsCompat;
 
 import android.util.Log;
 
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 public class CreateUser extends AppCompatActivity {
 
     EditText txtcorreo;
@@ -81,7 +84,7 @@ public class CreateUser extends AppCompatActivity {
         if (vrEncontrado == false) {
             AdminSQLiteOpen admin = new AdminSQLiteOpen(this, "UbicaTuPunto", null, 1);
             SQLiteDatabase BaseDeDatos = admin.getWritableDatabase();
-
+            String regex = "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$";
             Integer vr = 0;
 
             int selectedId = radioGroup.getCheckedRadioButtonId();
@@ -95,33 +98,40 @@ public class CreateUser extends AppCompatActivity {
                 //Toast.makeText(this, "Selected: " + selectedText, Toast.LENGTH_SHORT).show();
             }
 
-            if (!txtcorreo.getText().toString().isEmpty() && !txtnombre.getText().toString().isEmpty() && !txtclave.getText().toString().isEmpty()) {
+            Pattern pattern = Pattern.compile(regex);
+            Matcher matcher = pattern.matcher(txtcorreo.getText().toString());
 
-                ContentValues registro = new ContentValues(); //registar los datos
+            if (matcher.matches()) {
+                if (!txtcorreo.getText().toString().isEmpty() && !txtnombre.getText().toString().isEmpty() && !txtclave.getText().toString().isEmpty()) {
 
-                registro.put("correo", txtcorreo.getText().toString());
-                registro.put("id_sexo", vr);
-                registro.put("nombre", txtnombre.getText().toString());
-                registro.put("clave", txtclave.getText().toString());
+                    ContentValues registro = new ContentValues(); //registar los datos
 
-                Toast.makeText(this, "El usuario ha sido guardado de forma existosa", Toast.LENGTH_SHORT).show();
-                BaseDeDatos.insert("Users", null, registro);
-                BaseDeDatos.close();
+                    registro.put("correo", txtcorreo.getText().toString());
+                    registro.put("id_sexo", vr);
+                    registro.put("nombre", txtnombre.getText().toString());
+                    registro.put("clave", txtclave.getText().toString());
 
-                txtcorreo.setText("");
-                txtnombre.setText("");
-                txtclave.setText("");
+                    Toast.makeText(this, "El usuario ha sido guardado de forma existosa", Toast.LENGTH_SHORT).show();
+                    BaseDeDatos.insert("Users", null, registro);
+                    BaseDeDatos.close();
 
-                // Redirigir al usuario a la pantalla de inicio (MainActivity)
-                Intent ingresar = new Intent(this, MainActivity.class);
-                ingresar.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
-                startActivity(ingresar);
-                finish();
+                    txtcorreo.setText("");
+                    txtnombre.setText("");
+                    txtclave.setText("");
 
-            } else {
+                    // Redirigir al usuario a la pantalla de inicio (MainActivity)
+                    Intent ingresar = new Intent(this, MainActivity.class);
+                    ingresar.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                    startActivity(ingresar);
+                    finish();
 
-                Toast.makeText(this, "Todos los campos deben llenarse", Toast.LENGTH_SHORT).show();
+                } else {
+                    Toast.makeText(this, "Todos los campos deben llenarse", Toast.LENGTH_SHORT).show();
+                }
 
+            }
+            else {
+                Toast.makeText(this, "El correo electrónico no cumple con el formato apropiado: mi.correo@dominio.region", Toast.LENGTH_SHORT).show();
             }
 
         }
