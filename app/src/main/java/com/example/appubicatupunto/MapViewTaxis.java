@@ -72,14 +72,52 @@ public class MapViewTaxis extends AppCompatActivity implements OnMapReadyCallbac
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
 
-        // Agregar un marcador en Sydney y mover la cámara
-        LatLng sydney = new LatLng(-34, 151);
-        mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
-        // Mover la cámara y establecer el zoom
-        float zoomLevel = 16.0f;  // Aumenta el valor para más zoom (máximo 21.0f)
-        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(sydney, zoomLevel));
+        // Agregar marcadores con las coordenadas y títulos correspondientes
+        LatLng pointUNAH = new LatLng(14.084542638772412, -87.1667253629287);
+        mMap.addMarker(new MarkerOptions().position(pointUNAH).title("Punto de taxis UNAH"));
+
+        LatLng pointHatoCentro = new LatLng(14.07655032646491, -87.1679302635903);
+        mMap.addMarker(new MarkerOptions().position(pointHatoCentro).title("Punto de taxis Hato Centro"));
+
+        LatLng pointKennedy = new LatLng(14.107802811096871, -87.20290797633483);
+        mMap.addMarker(new MarkerOptions().position(pointKennedy).title("Punto de taxis Kennedy"));
+
+        LatLng pointCerroGrande = new LatLng(14.117634214640562, -87.22660348717216);
+        mMap.addMarker(new MarkerOptions().position(pointCerroGrande).title("Punto de taxis Cerro Grande"));
+
+        LatLng pointCarrizal = new LatLng(14.094327384173779, -87.23776425763758);
+        mMap.addMarker(new MarkerOptions().position(pointCarrizal).title("Punto de taxis Carrizal"));
+
+        LatLng pointResHonduras = new LatLng(14.054694347816929, -87.17562518004132);
+        mMap.addMarker(new MarkerOptions().position(pointResHonduras).title("Punto de taxis Res Honduras"));
+
+        LatLng pointPlazaMiraflores = new LatLng(14.078174334805535, -87.18557810971839);
+        mMap.addMarker(new MarkerOptions().position(pointPlazaMiraflores).title("Punto de taxis Plaza Miraflores"));
+
+        LatLng pointLasPalmas = new LatLng(14.061856347423612, -87.18437888258215);
+        mMap.addMarker(new MarkerOptions().position(pointLasPalmas).title("Punto de taxis Las Palmas"));
+
+        LatLng pointLaSanMiguel = new LatLng(14.109479484257387, -87.20463009453643);
+        mMap.addMarker(new MarkerOptions().position(pointLaSanMiguel).title("Punto de taxis La San Miguel"));
+
+        LatLng pointElSitioCentro = new LatLng(14.107480666020596, -87.19535923640245);
+        mMap.addMarker(new MarkerOptions().position(pointElSitioCentro).title("Punto de taxis El Sitio - Centro"));
+
+        LatLng pointLaGranja = new LatLng(14.083505090537884, -87.20926742605809);
+        mMap.addMarker(new MarkerOptions().position(pointLaGranja).title("Punto La Granja"));
+
+        LatLng pointFlorDelCampo = new LatLng(14.106648968644075, -87.20669058081815);
+        mMap.addMarker(new MarkerOptions().position(pointFlorDelCampo).title("Punto de taxis Flor del Campo"));
+
+        LatLng pointLlanosEmisoras = new LatLng(14.060691764736113, -87.18987210486127);
+        mMap.addMarker(new MarkerOptions().position(pointLlanosEmisoras).title("Punto de taxis Llanos - Emisoras"));
+
+        // Posicionar la cámara en uno de los puntos o en el centro de la zona
+        // Aquí se posiciona en el punto de taxis UNAH con un nivel de zoom de 16.0f:
+        float zoomLevel = 16.0f;
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(pointUNAH, zoomLevel));
     }
+
 
     //METODOS BOTONES DE NAVEGACION
     //METODO DEL BOTON MENU
