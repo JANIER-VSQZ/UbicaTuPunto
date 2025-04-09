@@ -105,10 +105,10 @@ private TextView txtDestino2;
 
         btnImagen2.setOnClickListener(v->{
             if (selectedOption==1){
-                Intent TBus = new Intent(this, GaleryViewBus.class);
+                Intent TBus = new Intent(this, GaleryViewBus2.class);
                 startActivity(TBus);
             } else if (selectedOption==2) {
-                Intent Ttaxi = new Intent(this, GaleryViewTaxis.class);
+                Intent Ttaxi = new Intent(this, GaleryViewTaxis2.class);
                 startActivity(Ttaxi);
             }
         });

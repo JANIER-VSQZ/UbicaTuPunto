@@ -6,11 +6,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#34AC70"
-    android:padding="0dp"
-    tools:context=".GaleryViewBus">
+    tools:context=".GaleryViewBus2">
 
     <View
-        android:id="@+id/view21"
+        android:id="@+id/view13"
         android:layout_width="255dp"
         android:layout_height="144dp"
         android:layout_marginStart="16dp"
@@ -23,7 +22,7 @@
         app:layout_constraintVertical_bias="0.19" />
 
     <TextView
-        android:id="@+id/textView11"
+        android:id="@+id/textView29"
         android:layout_width="345dp"
         android:layout_height="97dp"
         android:layout_marginStart="36dp"
@@ -41,7 +40,7 @@
         app:layout_constraintVertical_bias="0.872" />
 
     <View
-        android:id="@+id/view20"
+        android:id="@+id/view23"
         android:layout_width="285dp"
         android:layout_height="297dp"
         android:layout_marginStart="36dp"
@@ -54,7 +53,7 @@
         app:layout_constraintVertical_bias="0.573" />
 
     <TextView
-        android:id="@+id/textView9"
+        android:id="@+id/textView30"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="172dp"
@@ -73,7 +72,7 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/imageView13"
         android:layout_width="225dp"
         android:layout_height="124dp"
         android:layout_marginStart="16dp"
@@ -83,10 +82,10 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.206"
-        app:srcCompat="@mipmap/punto_bus" />
+        app:srcCompat="@mipmap/segundo_punto_bus" />
 
     <TextView
-        android:id="@+id/textView22"
+        android:id="@+id/textView31"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Buses Carrizal"
@@ -99,10 +98,10 @@
         app:layout_constraintVertical_bias="0.719" />
 
     <TextView
-        android:id="@+id/textView23"
+        android:id="@+id/textView32"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Buses Río Grande"
+        android:text="Buses Col. Suyapa"
         android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -112,7 +111,7 @@
         app:layout_constraintVertical_bias="0.719" />
 
     <ImageView
-        android:id="@+id/imageView8"
+        android:id="@+id/imageView14"
         android:layout_width="95dp"
         android:layout_height="95dp"
         android:scaleType="centerCrop"
@@ -122,10 +121,10 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.655"
-        app:srcCompat="@mipmap/bus_rio_grande" />
+        app:srcCompat="@mipmap/col_suyapa" />
 
     <ImageView
-        android:id="@+id/imageView6"
+        android:id="@+id/imageView15"
         android:layout_width="95dp"
         android:layout_height="95dp"
         android:scaleType="centerCrop"
@@ -135,10 +134,10 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.655"
-        app:srcCompat="@mipmap/bus_carrizal" />
+        app:srcCompat="@mipmap/carrizal" />
 
     <ImageView
-        android:id="@+id/imageView7"
+        android:id="@+id/imageView16"
         android:layout_width="95dp"
         android:layout_height="95dp"
         android:layout_margin="0dp"
@@ -150,10 +149,10 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.451"
-        app:srcCompat="@mipmap/bus_anillo" />
+        app:srcCompat="@mipmap/anillo" />
 
     <ImageView
-        android:id="@+id/imageView9"
+        android:id="@+id/imageView17"
         android:layout_width="95dp"
         android:layout_height="95dp"
         android:scaleType="centerCrop"
@@ -163,10 +162,10 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.451"
-        app:srcCompat="@mipmap/bus_unah" />
+        app:srcCompat="@mipmap/unah_bus" />
 
     <TextView
-        android:id="@+id/textView19"
+        android:id="@+id/textView33"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Buses del anillo"
@@ -179,7 +178,7 @@
         app:layout_constraintVertical_bias="0.537" />
 
     <TextView
-        android:id="@+id/textView20"
+        android:id="@+id/textView34"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Buses UNAH"
@@ -192,7 +191,7 @@
         app:layout_constraintVertical_bias="0.536" />
 
     <TextView
-        android:id="@+id/textView24"
+        android:id="@+id/textView35"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hora Inicio: 5:30 AM"
@@ -206,7 +205,7 @@
         app:layout_constraintVertical_bias="0.833" />
 
     <TextView
-        android:id="@+id/textView25"
+        android:id="@+id/textView36"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hora Final: 7:15 PM"
@@ -218,5 +217,4 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.872" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>
